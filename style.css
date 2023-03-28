@@ -1,7 +1,12 @@
 /*SAVE THIS*/
 
 body {
-    font-family: "Roboto", Verdana, sans-serif;
+  font-family: "Roboto", Verdana, sans-serif;
+  background-color:green ;
+  position: relative;
+  width: 100%;
+  display: block;
+  text-align:center ;
   }
   
   main {
@@ -9,12 +14,21 @@ body {
     margin: auto;
   }
   
-  button {
-    background: #8a0000;
-    color: #FFF;
-    border: 0px;
-    padding: 10px 20px;
-  }
+  button{
+    color: DarkGreen;
+    background-color: GhostWhite;
+    font-weight: bolder;
+    font-size: 40px;
+    width: 300px;
+    height: 95px;
+    border-width: thick;
+    box-shadow: 4px 4px 4px #000000;
+    border-style: dashed;
+    animation-name: button;
+    animation-duration: 2s;
+    align-items: center;
+    animation-iteration-count: infinite;
+}
   
   button:hover {
     cursor: pointer;
@@ -23,10 +37,41 @@ body {
   .message {
     display: none;
     position: fixed;
+    text-align: center;
     left: 50%;
     z-index: 1000;
     transform: translateX(-50%);
-    background: RGB(255,255,255,0.9);
+    background-color: white;
     padding: 50px;
     border: 2px solid black;
+  }
+
+image {
+    padding-bottom: 30px;
+}
+
+h3 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: darkgreen;
+    text-shadow: 4px 4px 7px black;
+    }
+    
+h2.outcome{
+      padding-top: 40px;
+      padding-bottom: 30px;
+      text-align: center;
+      color: darkgreen;
+      text-shadow: none;
+    }
+
+@keyframes button {
+      0% {border-color: DarkGoldenRod;}
+      50% {border-color: DarkGreen;}
+      100% {border-color: DarkGoldenRod}
+  }
+  
+  .cards{
+    padding-bottom: 20px;
   }
